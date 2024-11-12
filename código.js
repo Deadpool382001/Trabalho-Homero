@@ -12,12 +12,6 @@ function copiarTexto() {
     
     // Usa a API Clipboard para copiar o texto
     navigator.clipboard.writeText(textoParaCopiar)
-        .then(() => {
-            alert("Texto copiado para a área de transferência!");
-        })
-        .catch((err) => {
-            console.error("Erro ao copiar o texto: ", err);
-        });
 }
 
 function abrirEmNovaGuia() {
