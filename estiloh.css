@@ -14,7 +14,7 @@ div#opções {
     font: 12pt arial;
     text-align: center;
     width: 500px;
-    height: 500px;
+    height: 400px;
     line-height: 50px;
     border-radius: 10px;
     margin: auto;
@@ -22,7 +22,7 @@ div#opções {
 
 input {
     background-color: #00d173;
-    color: white;
+    color: black;
     border-radius: 20px;
     font: normal 12pt Arial;
 }
