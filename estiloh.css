@@ -1,5 +1,7 @@
 body {
     background-color: #29cc7d;
+    max-width: 896px;
+    max-height: 414px;
 }
 
 header {
@@ -13,8 +15,8 @@ div#opções {
     background-color: #c9fffe;
     font: 12pt arial;
     text-align: center;
-    width: 500px;
-    height: 280px;
+    max-width: 896px;
+    max-height: 414px;
     line-height: 50px;
     border-radius: 10px;
     margin: auto;
