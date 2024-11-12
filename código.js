@@ -3,5 +3,27 @@ function clicar1() {
 }
 
 function clicar2() {
-    window.alert (`Ana Júlia Carvalho` +"\n"+"\n"+ "Daniela de Paiva"  +"\n"+"\n"+  "Emanuelly dos Santos" +"\n"+"\n"+ "Enzo Andrés Rodrigues"+"\n"+"\n"+"Lara Malta Nitta"+"\n"+"\n"+"Letícia Valvazori dos Santos"+"\n"+"\n"+"Maria Fernanda Sakamoto"+"\n"+"\n"+"Matheus Henrique B."+"\n"+"\n"+"Milena Garcia")
+    window.alert (`Ana Júlia Carvalho @anajucarvalho_` +"\n"+"\n"+ "Daniela de Paiva @danielapaivass"  +"\n"+"\n"+  "Emanuelly dos Santos @emanuellymss" +"\n"+"\n"+ "Enzo Andrés Rodrigues @enzo_andres_rodrigues"+"\n"+"\n"+"Lara Malta Nitta @_laramalta_"+"\n"+"\n"+"Letícia Valvazori dos Santos @levalvazori"+"\n"+"\n"+"Maria Fernanda Sakamoto @maria_fernandaskc"+"\n"+"\n"+"Matheus Henrique B. da costa @matheus.h456"+"\n"+"\n"+"Milena Garcia @milenapq")
+}
+
+function copiarTexto() {
+    // Define o texto que você quer copiar
+    const textoParaCopiar = "Você é um advogado de defesa que precisa elaborar uma resposta à acusação de uma denúncia realizada pelo Ministério Público da Comarca de Fortaleza-Ceará. A denúncia apresenta a contra o meu cliente pela prática do artigo 155, caput, c/c artigo 14, inciso II, do Código Penal, e sua tarefa é refutar cada uma dessas alegações de forma clara, precisa e com argumentos jurídicos sólidos. Por favor, elabore uma RESPOSTA À ACUSAÇÃO, respeitosa e seguindo as normas processuais, respondendo ponto a ponto cada alegação com base nos argumentos fornecidos abaixo e quaisquer outros argumentos jurídicos aplicáveis. Instruções para a IA: 1.	A RESPOSTA À ACUSAÇÃO deve ser estruturada de forma a responder diretamente a cada alegação. 2.	Use linguagem formal e respeitosa. 3.	Forneça respostas que incluam fundamentos jurídicos aplicáveis e adequados a cada alegação específica. 4.	Caso necessário, argumente com base em provas documentais, testemunhais ou periciais mencionadas, e traga a fundamentação legal apropriada para fortalecer a defesa.";
+    
+    // Usa a API Clipboard para copiar o texto
+    navigator.clipboard.writeText(textoParaCopiar)
+        .then(() => {
+            alert("Texto copiado para a área de transferência!");
+        })
+        .catch((err) => {
+            console.error("Erro ao copiar o texto: ", err);
+        });
+}
+
+function abrirEmNovaGuia() {
+    // URL da página que você quer abrir
+    const url = "https://chat.com";
+    
+    // Abre a URL em uma nova guia
+    window.open(url, '_blank');
 }
